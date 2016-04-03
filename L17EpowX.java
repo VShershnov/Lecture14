@@ -2,20 +2,20 @@ package ua.com.glybovets.java1_1.lecture8;
 import acm.program.ConsoleProgram;
 import java.lang.Math;
 
-/*Запрограмувати обчислення ex при x [0;1) із точністю ep ,
-тобто за потрібне число приймається перше snтаке, 
-що | sn-sn-1 |<ep .
+/*Г‡Г ГЇГ°Г®ГЈГ°Г Г¬ГіГўГ ГІГЁ Г®ГЎГ·ГЁГ±Г«ГҐГ­Г­Гї ex ГЇГ°ГЁ x [0;1) ВіГ§ ГІГ®Г·Г­ВіГ±ГІГѕ ep ,
+ГІГ®ГЎГІГ® Г§Г  ГЇГ®ГІГ°ВіГЎГ­ГҐ Г·ГЁГ±Г«Г® ГЇГ°ГЁГ©Г¬Г ВєГІГјГ±Гї ГЇГҐГ°ГёГҐ snГІГ ГЄГҐ, 
+Г№Г® | sn-sn-1 |<ep .
 */
 public class L17EpowX extends ConsoleProgram{
 	
 	public void run() {
 	
-		println("Програма, що розраховує e в степені x [0;1)" +
-				" із точністю ep");
-		double ep=readDouble("Введіть точність ep: ");
-		double x=readDouble("Введіть число x [0;1): ");
+		println("ГЏГ°Г®ГЈГ°Г Г¬Г , Г№Г® Г°Г®Г§Г°Г ГµГ®ГўГіВє e Гў Г±ГІГҐГЇГҐГ­Ві x [0;1)" +
+				" ВіГ§ ГІГ®Г·Г­ВіГ±ГІГѕ ep");
+		double ep=readDouble("Г‚ГўГҐГ¤ВіГІГј ГІГ®Г·Г­ВіГ±ГІГј ep: ");
+		double x=readDouble("Г‚ГўГҐГ¤ВіГІГј Г·ГЁГ±Г«Г® x [0;1): ");
 		
-		println("e в степені " +x+" ="+cosx(x,ep));
+		println("e Гў Г±ГІГҐГЇГҐГ­Ві " +x+" ="+ePowX(x,ep));
 		
 		double sum=0;
 		double s=1;
@@ -28,7 +28,7 @@ public class L17EpowX extends ConsoleProgram{
 		}
 		}
 
-	private double cosx(double x, double ep) {
+	private double ePowX(double x, double ep) {
 		
 		if (x==0)
 			return 1;
