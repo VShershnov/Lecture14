@@ -18,11 +18,12 @@ public class L17EpowX extends ConsoleProgram{
 		println("e â ñòåïåí³ " +x+" ="+cosx(x,ep));
 		
 		double sum=0;
-		doubles=1;
+		double s=1;
+		double e=2.71;
 		int n=1;
 		while (s>=e){
 			sum=s1;
-			s=s*(1)*x*x/(2*n);
+			s=s*(-1)*x*x/(2*n);
 			n=n+1;
 		}
 		}
