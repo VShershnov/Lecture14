@@ -2,20 +2,20 @@ package ua.com.glybovets.java1_1.lecture8;
 import acm.program.ConsoleProgram;
 import java.lang.Math;
 
-/*Ã‡Ã Ã¯Ã°Ã®Ã£Ã°Ã Ã¬Ã³Ã¢Ã Ã²Ã¨ Ã®Ã¡Ã·Ã¨Ã±Ã«Ã¥Ã­Ã­Ã¿ ex Ã¯Ã°Ã¨ x [0;1) Â³Ã§ Ã²Ã®Ã·Ã­Â³Ã±Ã²Ã¾ ep ,
-Ã²Ã®Ã¡Ã²Ã® Ã§Ã  Ã¯Ã®Ã²Ã°Â³Ã¡Ã­Ã¥ Ã·Ã¨Ã±Ã«Ã® Ã¯Ã°Ã¨Ã©Ã¬Ã ÂºÃ²Ã¼Ã±Ã¿ Ã¯Ã¥Ã°Ã¸Ã¥ snÃ²Ã ÃªÃ¥, 
-Ã¹Ã® | sn-sn-1 |<ep .
+/*Çàïðîãðàìóâàòè îá÷èñëåííÿ ex ïðè x [0;1) ³ç òî÷í³ñòþ ep ,
+ *  òîáòî çà ïîòð³áíå ÷èñëî ïðèéìàºòüñÿ ïåðøå sn òàêå,
+ *   ùî | sn-sn-1 |<ep .
 */
 public class L17EpowX extends ConsoleProgram{
 	
 	public void run() {
 	
-		println("ÃÃ°Ã®Ã£Ã°Ã Ã¬Ã , Ã¹Ã® Ã°Ã®Ã§Ã°Ã ÃµÃ®Ã¢Ã³Âº e Ã¢ Ã±Ã²Ã¥Ã¯Ã¥Ã­Â³ x [0;1)" +
-				" Â³Ã§ Ã²Ã®Ã·Ã­Â³Ã±Ã²Ã¾ ep");
-		double ep=readDouble("Ã‚Ã¢Ã¥Ã¤Â³Ã²Ã¼ Ã²Ã®Ã·Ã­Â³Ã±Ã²Ã¼ ep: ");
-		double x=readDouble("Ã‚Ã¢Ã¥Ã¤Â³Ã²Ã¼ Ã·Ã¨Ã±Ã«Ã® x [0;1): ");
+		println("Ïðîãðàìà, ùî ðîçðàõîâóº e â ñòåïåí³ x ïðè x [0;1)" +
+				" ç òî÷í³ñòþ ep");
+		double ep=readDouble("Ââåä³òü òî÷í³ñòü ep: ");
+		double x=readDouble("Ââåä³òü ÷èñëî x [0;1): ");
 		
-		println("e Ã¢ Ã±Ã²Ã¥Ã¯Ã¥Ã­Â³ " +x+" ="+ePowX(x,ep));
+		println("e â ñòåïåí³ " +x+" ="+ePowX(x,ep));
 		
 		double sum=0;
 		double s=1;
