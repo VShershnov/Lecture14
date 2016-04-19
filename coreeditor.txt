@@ -1,0 +1,1 @@
+ git config --global --add core.editor "'C:/Program Files\Windows NT\Accessories\wordpad.exe'  -multiInst -notabbar -nosession -noPlugin"
